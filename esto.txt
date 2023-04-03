@@ -1,0 +1,40 @@
+console.log("hola bienvenidos a mi sitio");
+
+
+
+let nombre = prompt("¿cual quieres que sea tu nombre de usuario?");
+alert ("bienvenido a mi pagina " + nombre);
+
+const NOMBREUSUARIO = nombre;
+alert("tu nombre de usuario es " + NOMBREUSUARIO);
+console.log("tu nombre de usuario es " + NOMBREUSUARIO);
+
+let apellido = prompt("¿cual es tu apellido?");
+
+let correo = prompt("¿cual es tu correo electronico?");
+
+let contraseña = prompt("¿que contraseña quiere ingresar?");
+
+
+let reingresocontraseña = prompt("confirma la contraseña")
+if (contraseña != reingresocontraseña) {
+    alert("las contraseñas no son iguales");
+    
+} else {
+    alert("todo es correcto")
+    
+}
+
+
+let edad = parseInt(prompt("¿cual es tu edad?"))
+if (edad >= 18){
+    console.log("puedes ingresar");
+    alert("pasa a mi pagina rey/reina")
+}
+else{
+    console.log("no puedes ingresar");
+    alert("disculpa sos menor,no podes")
+}
+
+
+
