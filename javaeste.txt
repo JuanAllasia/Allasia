@@ -87,14 +87,11 @@ class producto{
         this.precio = parseFloat(precio);
         this.vendido = false;
     }
-    toString = function () {
-        return this.nombre + "( $" + this.precio.toFixed(2) + ")";
-    }
 }
 
 let misproductos = [];
 
-let respuesta = "SI";
+let respuesta = "si";
 
 do {
     let nombre = prompt("ingrese el nombre del producto")
@@ -103,20 +100,6 @@ do {
     misproductos.push(unproducto)
     console.log("la cantidad de productos que hay en mi lista ",misproductos.length);
     respuesta = prompt("¿quieres seguir agregando productos? si/no")
-}  while (respuesta.toUpperCase() !== "NO");
+} while (respuesta.toUpperCase() !== "no");
 
 console.log("esta es la lista de los productos que cargue ", misproductos);
-
-
-misproductos.forEach((unproducto) =>{
-    console.log("--> " + unproducto.toString());
-})
-
-
-let nombrebuscado = prompt("¿que producto estas buscando?")
-
-let productohallado = misproductos.filter(
-    (unproducto) => unproducto.nombre.includes(nombrebuscado.toUpperCase()
-))
-
-alert("la cantidad de producto que se hallaron en su nombre " + nombrebuscado + " son: " + productohallado.length)
